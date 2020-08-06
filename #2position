@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>positon</title>
+   <style>
+
+
+     .dropdown{
+          position: absolute;
+          display: inline-block;
+          top:30px;
+          left:10%;
+          z-index: 1;
+     }
+     .drop-btn{
+          color:white;
+          background-color: black;
+          font-size: 25px;
+          padding: 4px;
+          cursor: pointer;               
+     }
+     .drop-content a{
+          text-decoration: none;
+          font-size: 20px;
+          color:white;
+          background-color: gray;
+          padding: 10px;
+          display: block;
+     }
+     .drop-content{
+          display: none;
+     } 
+     .dropdown:hover .drop-content{
+           display: block;
+           width:200%;
+           position: relative;
+      }
+
+      .container{
+           background-color: gray;
+           position: relative;
+           height: 300px;
+           width:650px;
+           top:160px;
+           left:9.55%;
+           
+      }
+      .upper-left{
+           position: absolute;
+           background-color: black;
+           height: 10px;
+           width:20%;
+           padding: 20px; 
+      }
+      .upper-right{
+           position: absolute;
+           background-color:black;
+           left:480px;
+           height:10px;
+           width:20%;
+           padding: 20px; 
+      }
+      .bottom-left{
+           position: absolute;
+           background-color: black;
+           top:250px;
+           left:0px;
+           height: 10px;
+           width:20%;
+           padding: 20px; 
+      }
+      .bottom-right{
+           position: absolute;
+           background-color: black;
+           left:480px;
+           top:250px;
+           height: 10px;
+           width:20%;
+           padding: 20px; 
+      }
+
+   </style>
+
+</head>
+<body>
+     
+
+    <div class="dropdown">
+         <span class="drop-btn"> Dropdown </span>
+       <div class="drop-content">
+            <a href="#"> Link 1 </a>
+            <a href="#"> Link 2 </a>
+            <a href="#"> Link 3 </a>
+       </div>
+     </div>
+
+     <div class="container">
+          <div class="upper-left"></div>
+          <div class="upper-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+
+     </div>
+       
+     
+</body>
+</html>
